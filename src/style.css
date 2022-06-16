@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#main-player {
+  width: 100vw;
+  height: 100vh;
+}
+
+.paused {
+  opacity: 0.5;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.btn {
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 12rem;
+  outline: none;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btn-move {
+  font-size: 8rem;
+}
+
+#btn-next {
+  margin-left: 16rem;
+}
+
+#btn-pre {
+  margin-left: -16rem;
+}
+
+#btn-next span:first-child {
+  margin-right: -5rem;
+}
+
+#btn-pre span:last-child {
+  margin-left: -5rem;
+}
+
+.btn:active {
+  transform: translate(-50%, -50%) scale(0.9);
+}

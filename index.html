@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="video-container">
+      <video src="./videos/1.mp4" id="main-player" class="paused"></video>
+      <div class="controls">
+        <button class="btn" id="btn-play">&#9654;</button>
+        <button class="btn btn-move" id="btn-next">
+          <span>&#9654;</span>
+          <span>&#9654;</span>
+        </button>
+        <button class="btn btn-move" id="btn-pre">
+          <span>&#9664;</span>
+          <span>&#9664;</span>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
